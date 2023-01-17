@@ -1,0 +1,13 @@
+package com.bridgelabz;
+
+public class ControlStatment {
+	
+	public static void main(String[] args) {
+		// wap to find positive num or not
+		// num as input
+		// num is greater than o then it's +ve else -ve
+		
+		
+	}
+
+}

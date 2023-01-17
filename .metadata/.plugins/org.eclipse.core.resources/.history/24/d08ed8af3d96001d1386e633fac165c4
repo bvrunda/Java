@@ -1,0 +1,55 @@
+package com.bridgelabz;
+
+import java.util.Scanner;
+
+public class ControlStatement {
+	
+	public boolean isNeutral(int number) {
+		return number == 0;
+	}
+	
+	public boolean isPositiveOrNegative(int number) {
+		return number > 0;
+	}
+	
+	public void printTable(int number) {
+		for(int i=1;i<=10;i++) {
+			System.out.println(number * i);
+		}
+	}
+	
+	
+	public int getSumOfDigit(int number) {
+		int sum = 0;
+		while(number != 0) {
+			int rem = number % 10;
+			sum = sum + rem;
+			number = number / 10;
+		}
+		return sum;
+	}
+	
+	public static void main(String[] args) {
+		// wap to find positive num or not
+		// num as input
+		// num is greater than o then it's +ve else -ve 
+		
+		ControlStatement controlStatment = new ControlStatement();
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int number = scanner.nextInt();
+		
+		System.out.println("in Program input is "+ number);
+		//if(number == 0) {
+		  if(controlStatment.isNeutral(number))	
+		System.out.println("it's neutral..");	
+		}else if(number > 0) {
+			System.out.println("+ve");
+		}else {
+			System.out.println("-ve");
+		}
+			
+	}
+
+}
